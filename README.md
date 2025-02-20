@@ -2,6 +2,16 @@
 
 This is a project to show how to use the Ostium Python SDK.
 
+It demonstrates how to:
+- Get list of all feeds to trade
+- Get latest price of a feed
+- Perform a trade (limit and market orders)
+- Get list of open trades
+- Update take profit and stop loss for an open trade
+- Get trade metrics for an open trade aka: open PnL, Funding fee, Rollover fee, Percent profit, etc.
+- Close a trade
+
+
 ## Prerequisites
 
 - Python 3.10+
