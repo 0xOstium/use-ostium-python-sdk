@@ -11,7 +11,7 @@ This project demonstrates how to use `ostium-python-sdk` to:
 - Perform a trade (limit and market orders)
 - Get list of open trades
 - Update take profit and stop loss for an open trade
-- Get trade metrics for an open trade aka: open PnL, Funding fee, Rollover fee, Percent profit, etc.
+- Get trade metrics for an open trade aka: open PnL, Funding fee, Rollover fee, Percent profit, Liquidation price, etc.
 - Close a trade
 
 
