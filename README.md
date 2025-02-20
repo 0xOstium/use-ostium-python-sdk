@@ -21,6 +21,9 @@ This project demonstrates how to use `ostium-python-sdk` to:
 
 ## Environment Variables
 
+You will need an EVM private key and a RPC URL to use the SDK. By default the project is configured to use Sepolia Arbitrum so the below RPC_URL should be a Sepolia Arbitrum one
+
+
 ### Create a .env file
 
 ```bash
@@ -51,11 +54,18 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+This will install the `ostium-python-sdk`.
+
 ## Run the project
 
 ```bash
 python main.py
 ```
+
+This will run the project and you will see the output in the terminal.
+
+You might need to go to Ostium.app website, switch to Sepolia Testnet and get some testnet USDC tokens from the testnet faucet to be able to run this project for the first time.
+
 
 
 
