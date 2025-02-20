@@ -1,6 +1,6 @@
 # Use Ostium Python SDK
 
-This is a project that show cases how to use the Ostium Python SDK (https://github.com/0xOstium/ostium-python-sdk aka `ostium-python-sdk`, which is a python based SDK developed for interacting with Ostium v1 Trading Platform (https://ostium.app/ available on Arbitrum One Mainnet and Arbitrum Sepolia Testnet). Install the SDK itself via pip:
+This is a project that show cases how to use the Ostium Python SDK (https://github.com/0xOstium/ostium-python-sdk aka `ostium-python-sdk`, which is a python based SDK developed for interacting with Ostium v1 Trading Platform - https://ostium.app/ available on Arbitrum One Mainnet and Arbitrum Sepolia Testnet). Install the SDK itself via pip:
 `pip install ostium-python-sdk`.
 
 
