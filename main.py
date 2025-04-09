@@ -1,6 +1,7 @@
 import random
 from ostium_python_sdk import OstiumSDK
 from ostium_python_sdk.config import NetworkConfig
+from ostium_python_sdk.utils import get_order_details
 import asyncio
 from dotenv import load_dotenv
 from eth_account import Account
@@ -78,6 +79,11 @@ async def main():
         open_orders = await sdk.subgraph.get_orders(trader_public_address)
         for order_index, order_data in enumerate(open_orders):
             print(f"Order {order_index + 1}: {order_data}\n")
+            limit_type, _, _, _, _, _, _, pairIndex, index, _, _ = get_order_details(order_data)
+            print(f"You can cancel_limit_order / update_limit_order using pair_id: {pairIndex} and index: {index}\n")
+            receipt = sdk.ostium.cancel_limit_order(pairIndex, index)
+            print(
+            f"Limit Order cancelled! Transaction hash: {receipt['transactionHash'].hex()}")
 
         if len(open_orders) == 0:
             print(
